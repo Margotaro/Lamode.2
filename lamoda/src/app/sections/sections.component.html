@@ -1,7 +1,7 @@
 <div class = "header">
-    <div *ngFor="let section of sections" class="section" >
-        <a routerLink ="/{{section.name}}">
-            {{section.name}}
+    <nav>
+        <a *ngFor="let section of sections" class="section" routerLink="/detail/{{section.name}}" >
+         {{section.name}}
         </a>
-    </div>
+    </nav>
 </div>
